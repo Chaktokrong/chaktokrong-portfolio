@@ -1,0 +1,661 @@
+@import "../../themes.scss";
+
+.text-header-home {
+  font-family: $font-title !important;
+  font-size: $font-title-size;
+  color: #fff;
+
+  @include laptop {
+    font-size: $font-title-laptop;
+  }
+  @include tablet {
+    font-size: $font-title-laptop;
+  }
+  @include mobile {
+    font-size: $font-title-laptop;
+  }
+  @include mobile-small {
+    font-size: 23px;
+  }
+}
+
+.about-page {
+  width: 100%;
+  justify-content: center;
+
+  .main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .box-container {
+      width: $width-container;
+      @include laptop {
+        width: $width-laptop;
+      }
+      @include tablet {
+        width: $width-laptop;
+      }
+      @include mobile {
+        width: $width-laptop;
+      }
+      @include mobile-small {
+        width: $width-laptop;
+      }
+      .container-Grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+
+        @include laptop {
+          padding: 0 0;
+        }
+        @include tablet {
+          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        @include mobile-large {
+          padding: 0 0rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        @include mobile {
+          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        @include mobile-small {
+          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .container-text {
+          padding: 0 5rem;
+          line-height: 35px;
+
+          @include laptop {
+            padding: 0 2rem;
+          }
+          @include tablet {
+            padding: 3rem 1rem;
+          }
+          @include mobile {
+            padding: 3rem 0rem;
+          }
+          @include mobile-small {
+            padding: 3rem 0rem;
+          }
+
+          .header-title {
+            font-family: $font-title;
+            font-size: $font-title-size;
+            color: #ffffff;
+            line-height: 2;
+
+            @include laptop {
+              font-size: $font-title-laptop;
+            }
+            @include tablet {
+              font-size: $font-title-laptop;
+            }
+            @include mobile {
+              font-size: $font-title-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-title-laptop;
+            }
+          }
+
+          .header-discraption {
+            font-family: $font-body;
+            font-size: $font-body-size;
+            color: #ffffff;
+
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-laptop;
+            }
+            @include mobile {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-body-laptop;
+            }
+          }
+        } // container -text
+
+        .container-img {
+          width: 100%;
+          height: 100%;
+
+          .header-img {
+            width: 769px;
+            height: 578px;
+
+            @include laptop {
+              height: 350px;
+            }
+            @include tablet {
+              height: 450px;
+            }
+            @include mobile {
+              display: none;
+            }
+            @include mobile-small {
+              display: none;
+            }
+          }
+        } // container-image
+      } // container-grid
+
+      .container-img-phone {
+        display: none;
+        @include laptop {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
+        @include mobile-large {
+          display: none;
+        }
+        @include mobile {
+          display: block;
+          padding: 0px 2rem;
+        }
+        @include mobile-small {
+          padding: 0 2rem;
+          display: block;
+        }
+      }
+    } //box-container
+  } // main-Container
+
+  .container-body {
+    padding: 7rem 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+      padding: 5rem 0;
+    }
+    @include tablet {
+      padding: 5rem 0;
+    }
+    @include mobile-large {
+      padding: 5rem 0;
+    }
+    @include mobile {
+      padding: 5rem 0;
+    }
+    @include mobile-small {
+      padding: 5rem 0;
+    }
+
+    .box-container-body {
+      width: $width-container;
+      background-color: #ffffff;
+
+      @include laptop {
+        width: $width-laptop;
+      }
+      @include tablet {
+        width: $width-laptop;
+      }
+      @include mobile-large {
+        width: $width-laptop;
+      }
+      @include mobile {
+        width: $width-laptop;
+      }
+      @include mobile-small {
+        width: $width-laptop;
+      }
+
+      .title-vision {
+        font-size: $font-title-size;
+        font-family: $font-title;
+        color: $secondary-color;
+        line-height: 40px;
+        height: 70px;
+
+        @include laptop {
+          font-size: $font-title-laptop;
+        }
+        @include tablet {
+          font-size: $font-title-laptop;
+        }
+        @include mobile {
+          font-size: $font-title-laptop;
+          height: 50px;
+        }
+
+        @include mobile {
+          font-size: $font-title-laptop;
+          height: 50px;
+        }
+        @include mobile-small {
+          font-size: $font-title-laptop;
+          height: 50px;
+        }
+      }
+      .subtitle-vision {
+        line-height: 40px;
+        font-size: $font-body-size;
+        font-family: $font-body;
+        color: $secondary-color;
+
+        @include laptop {
+          font-size: $font-body-laptop;
+          text-align: center;
+        }
+        @include tablet {
+          font-size: $font-body-laptop;
+          text-align: center;
+        }
+        @include mobile {
+          font-size: $font-body-laptop;
+          text-align: center;
+        }
+        @include mobile-small {
+          font-size: $font-body-laptop;
+          text-align: center;
+        }
+      }
+
+      .container-grid-viston {
+        padding: 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include laptop {
+          padding: 0rem 0;
+        }
+        @include tablet {
+          padding: 0rem 0;
+        }
+        @include mobile {
+          padding: 0rem 0;
+          display: block;
+        }
+        @include mobile-small {
+          padding: 0rem 0;
+          display: block;
+        }
+
+        .container-img-vision {
+          width: 100%;
+          height: 100%;
+
+          .img-vision {
+            width: 798px;
+          }
+          @include laptop {
+            padding: 2rem 0;
+          }
+          @include tablet {
+            padding: 4rem 0;
+          }
+          @include mobile {
+            padding: 6rem 0;
+          }
+          @include mobile-small {
+            padding: 8rem 0;
+          }
+        }
+
+        .container-text-vision {
+          padding: 0 0rem;
+          line-height: 35px;
+
+          @include laptop {
+            padding: 0rem 0;
+          }
+          @include tablet {
+            padding: 0rem 0;
+          }
+          @include mobile {
+            padding: 0rem 0;
+            text-align: center;
+          }
+          @include mobile-small {
+            padding: 0rem 0;
+            text-align: center;
+          }
+
+          .sub-title {
+            font-family: $font-title;
+            font-size: $font-title-size;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: $primary-color;
+
+            @include laptop {
+              font-size: $font-title-laptop;
+            }
+            @include tablet {
+              font-size: $font-title-laptop;
+            }
+            @include mobile {
+              font-size: $font-title-laptop;
+              text-align: center;
+            }
+            @include mobile-small {
+              font-size: $font-title-laptop;
+            }
+          }
+          .discraption-vision {
+            font-family: $font-body;
+            font-size: $font-body-size;
+            color: $primary-color;
+
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-laptop;
+            }
+            @include mobile {
+              font-size: $font-body-laptop;
+              text-align: center;
+            }
+            @include mobile-small {
+              font-size: $font-body-laptop;
+              text-align: center;
+            }
+          }
+        }
+      } // container-grid-viston
+
+      .title-history {
+        font-family: $font-title;
+        font-size: $font-title-size;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $primary-color;
+
+        @include laptop {
+          font-size: $font-title-laptop;
+        }
+        @include tablet {
+          font-size: $font-title-laptop;
+        }
+        @include mobile-large {
+          font-size: $font-title-laptop;
+        }
+        @include mobile {
+          padding: 3rem 0;
+          font-size: $font-title-laptop;
+          text-align: center;
+        }
+        @include mobile-small {
+          padding: 1rem 0;
+          font-size: $font-title-laptop;
+          text-align: center;
+        }
+      }
+      .subtitle-history {
+        font-family: $font-body;
+        font-size: $font-body-size;
+        color: $primary-color;
+        padding: 2rem 0;
+
+        @include laptop {
+          font-size: $font-body-laptop;
+        }
+        @include tablet {
+          font-size: $font-body-laptop;
+        }
+        @include mobile-large {
+          font-size: $font-body-laptop;
+          display: flex;
+          align-items: center;
+        }
+        @include mobile {
+          font-size: $font-body-laptop;
+          padding: 0rem 0;
+          text-align: center;
+        }
+        @include mobile-small {
+          padding: 0 0;
+          text-align: center;
+          font-size: $font-body-laptop;
+        }
+      }
+      .container-grid-history {
+        display: flex;
+        justify-content: center;
+
+        .img-history {
+          width: 100%;
+
+          @include mobile {
+            padding: 3rem 0;
+          }
+          @include mobile-small {
+            padding: 2rem 0;
+          }
+        }
+        .container-text-history {
+          .subtitle-history {
+            font-family: $font-body;
+            font-size: $font-subtitle-size;
+            color: $primary-color;
+
+            @include laptop {
+              font-size: $font-subtitle-laptop;
+            }
+            @include tablet {
+              font-size: $font-subtitle-laptop;
+            }
+            @include mobile-large {
+              font-size: $font-subtitle-laptop;
+            }
+            @include mobile {
+              padding: 1rem 0;
+              font-size: $font-subtitle-laptop;
+            }
+            @include mobile-small {
+              padding: 2rem 0;
+              font-size: $font-subtitle-laptop;
+            }
+          }
+          .discraption {
+            font-family: $font-body;
+            font-size: $font-body-size;
+            color: $primary-color;
+
+            @include laptop {
+              font-size: $font-body-laptop;
+            }
+            @include tablet {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-large {
+              font-size: $font-body-laptop;
+              display: flex;
+              align-items: center;
+            }
+            @include mobile {
+              font-size: $font-body-laptop;
+            }
+            @include mobile-small {
+              font-size: $font-body-laptop;
+            }
+          }
+        }
+      }
+    } // Box-container
+  } //container-body
+
+  .container-title {
+    background-color: #fff;
+
+    .member-title {
+      font-size: $font-title-size;
+      font-family: $font-title;
+      color: $primary-color;
+      text-decoration: underline;
+      line-height: 2.5;
+
+      @include laptop {
+        font-size: $font-title-laptop;
+      }
+      @include tablet {
+        font-size: $font-title-laptop;
+      }
+      @include mobile-large {
+        font-size: $font-title-laptop;
+      }
+      @include mobile {
+        font-size: $font-title-laptop;
+      }
+      @include mobile-small {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .container-member {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .box-container-member {
+      width: $width-container;
+      // display: flex;
+      justify-content: center;
+
+      @include laptop {
+        width: $width-container;
+      }
+      @include tablet {
+        width: $width-container;
+      }
+      @include mobile-large {
+        width: $width-container;
+      }
+      @include mobile {
+        width: $width-container;
+        text-align: center;
+      }
+      @include mobile-small {
+        width: $width-container;
+        text-align: center;
+      }
+    }
+
+    .simple-grid {
+      margin: 30px 0px 50px 0px;
+
+      .image-style {
+        width: 100%;
+        .container-image {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .image-item {
+            width: 300px;
+            // height: 300px;
+            // padding: 10px;
+            border-radius: 50%;
+
+            @include laptop {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+              // display: block;
+            }
+            @include tablet {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+            }
+
+            @include mobile-large {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+            }
+
+            @include mobile {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+            }
+            @include mobile-small {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .memeber-name {
+          color: $primary-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $font-title;
+          font-size: $font-title-tablet;
+          font-weight: bold;
+
+          @include laptop {
+            font-size: $font-subtitle-laptop;
+          }
+          @include tablet {
+            font-size: $font-subtitle-laptop;
+          }
+          @include mobile-large {
+            font-size: $font-subtitle-laptop;
+          }
+          @include mobile {
+            font-size: $font-subtitle-laptop;
+          }
+          @include mobile-small {
+            font-size: $font-subtitle-laptop;
+          }
+        }
+        .memeber-position {
+          color: $primary-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $font-body;
+          font-size: $font-body-size;
+
+          @include laptop {
+            font-size: $font-body-laptop;
+          }
+          @include tablet {
+            font-size: $font-body-laptop;
+          }
+          @include mobile-large {
+            font-size: $font-body-laptop;
+          }
+          @include mobile {
+            font-size: $font-body-laptop;
+          }
+          @include mobile-small {
+            font-size: $font-body-laptop;
+          }
+        }
+      }
+    }
+  } // container-member
+} // main

@@ -1,0 +1,115 @@
+@import "../themes.scss";
+
+.navbar-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .sub-menu {
+    background-color: $primary-color !important;
+
+    :hover {
+      background-color: $primary-color !important;
+    }
+
+    .sub-menu-item {
+      background-color: $primary-color !important;
+    }
+  }
+
+  .logo-mobile {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .menu-icon {
+    font-size: 40px;
+  }
+
+  .container {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    transition: 0.8s;
+
+    .menu-flex {
+      width: 90%;
+
+      .logo {
+        padding: 15px;
+        margin-bottom: -80px;
+        margin-left: 80px;
+      }
+
+      .menu-item {
+        margin-right: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        .menu-title {
+          font-family: $font-title;
+          font-size: $font-body-size;
+        }
+
+        .flat-translate {
+          display: flex;
+          justify-content: right;
+
+          .menu-title {
+            font-family: $font-title;
+            font-size: $font-body-size;
+          }
+        }
+      }
+    }
+  }
+
+  .container-scroll {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    transition: 0.8s;
+    position: fixed;
+    z-index: 10;
+
+    .menu-flex {
+      width: 90%;
+
+      .logo {
+        width: 100px;
+        padding: 10px;
+        margin-left: 80px;
+      }
+
+      .menu-item {
+        margin-right: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        .menu-title {
+          font-family: $font-title;
+          font-size: $font-body-size;
+        }
+
+        .flat-translate {
+          display: flex;
+          justify-content: right;
+
+          .menu-title {
+            font-family: $font-title;
+            font-size: $font-body-size;
+          }
+        }
+      }
+    }
+  }
+}

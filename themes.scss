@@ -1,0 +1,69 @@
+
+$width-container: 80%;
+
+// Font Family
+$font-title: "Preahvihear";
+$font-body: "Kantumruy";
+
+// Font Size
+$font-title-size: 45px;
+$font-subtitle-size: 30px;
+$font-body-size: 20px;
+
+// --------laptop-----------
+$font-title-laptop: 30px;
+$font-subtitle-laptop: 24px;
+$font-body-laptop: 18px;
+$width-laptop: 90%;
+
+// --------tablet----------- test push
+$font-title-tablet: 26px;
+$font-subtitle-tablet: 22px;
+$font-body-tablet: 18px;
+
+// // --------mobile-----------
+// $font-title-mobile: 52px;
+// $font-subtitle-mobile: 30px;
+// $font-body-mobile: 20px;
+
+// Color
+$primary-color: #092453;
+$secondary-color: #7cdba8;
+$third-color: #fc7e7f;
+$background-primary: linear-gradient(122deg,rgba(50, 74, 118, 1) 0%,rgba(9, 36, 83, 1) 87%);
+
+@mixin desktop {
+  @media (min-width: #{1025px}) and (max-width: #{1650px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{769px}) and (max-width: #{1024px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{426px}) and (max-width: #{768px}) {
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (min-width: #{426px}) and (max-width: #{600px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{377px}) and (max-width: #{425px}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (min-width : #{0px}) and (max-width: #{376px}) {
+    @content;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../themes.scss";
+
+.navbar-responsive {
+    background: $background-primary !important;
+    color: #fff;
+    width: 280px !important;
+
+    
+    .main-menu {
+        height: 100vh;
+
+        .icon-menu {
+            color: #fff !important;
+            font-size: 30px;
+            margin-right: 30px;
+        }
+        
+
+        .menu-item {         
+            cursor: pointer;
+            margin-left: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .menu-title {
+                font-family: $font-title;
+                font-size: $font-body-size; 
+                color: #fff;
+            }
+        }
+
+        .sub-menu-item {
+
+            cursor: pointer;
+            margin-left: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .menu-title {
+                font-family: $font-title;
+                font-size: $font-body-size; 
+                color: #fff;
+            }
+
+        }
+
+        .box-mark {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            
+            .text {
+                font-family: $font-body;
+                color: white;                
+            }
+        }
+
+    }
+}
